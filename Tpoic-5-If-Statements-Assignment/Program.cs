@@ -5,20 +5,30 @@
         static void Main(string[] args)
         {
             int age = 20;
-            if (age>=18)
-            { Console.WriteLine("You are an adult"); 
+            if (age>=16)
+            { Console.WriteLine("You can't drive."); 
             
             }
-            else
+            else if (age>=18)
             {
-                Console.WriteLine("You are legally a child");
+                Console.WriteLine("You can't vote.");
 
             }
-            string firstname = Bob;
+            else if (age >= 20)
+            {
+                Console.WriteLine("You can't rent a car.");
+
+            }
+            else if (age <= 25)
+            {
+                Console.WriteLine("You can do anything! (thats legal).");
+
+            }
+            string firstname = "Bob";
             Console.WriteLine("Please enter your name.");
             firstname = Console.ReadLine();
            
-            if (firstname == Bob)
+            if (firstname == "Bob")
             {
                 Console.WriteLine("Nice name");
             }
