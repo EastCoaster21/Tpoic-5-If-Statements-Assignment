@@ -6,8 +6,13 @@
         {
             int age = 20;
             if (age>=18)
-            { Console.WriteLine("You are legal"); 
+            { Console.WriteLine("You are an adult"); 
             
+            }
+            else
+            {
+                Console.WriteLine("You are legally a child");
+
             }
             string firstname = Bob;
             Console.WriteLine("Please enter your name.");
