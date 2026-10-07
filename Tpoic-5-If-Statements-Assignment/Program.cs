@@ -4,22 +4,24 @@
     {
         static void Main(string[] args)
         {
-            int age = 20;
-            if (age>=16)
+            int age;
+            Console.WriteLine("How Old Are You?");
+            age = Convert.ToInt32(Console.ReadLine());
+            if (age<=16)
             { Console.WriteLine("You can't drive."); 
             
             }
-            else if (age>=18)
+            else if (age<=18)
             {
                 Console.WriteLine("You can't vote.");
 
             }
-            else if (age >= 20)
+            else if (age <= 20)
             {
                 Console.WriteLine("You can't rent a car.");
 
             }
-            else if (age <= 25)
+            else if (age > 20)
             {
                 Console.WriteLine("You can do anything! (thats legal).");
 
